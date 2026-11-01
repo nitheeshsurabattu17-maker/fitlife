@@ -1,5 +1,6 @@
 import coachChakriImg from '../assets/images/coach_chakri_1793536277690.jpg';
 import coachJaniImg from '../assets/images/coach_jani_1793536277908.jpg';
+import gymInteriorImg from '../assets/images/gym_interior_floor_1793539142844.jpg';
 
 export interface MembershipPlan {
   id: string;
@@ -249,7 +250,7 @@ export const GALLERY_ITEMS: GalleryPhoto[] = [
     category: 'interior',
     categoryLabel: 'GYM INTERIOR',
     caption: 'Fitlife Main Workout Floor & Olympic Stations',
-    image: 'https://threebestrated.in/images/FitlifeGYMGuntur-Guntur-AP.jpeg'
+    image: gymInteriorImg
   },
   {
     id: 2,
