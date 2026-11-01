@@ -1,0 +1,8 @@
+{
+  "name": "Fitlife Gym Guntur",
+  "description": "FITLIFE GYM GUNTUR - Premier fitness, Olympic strength training, cardio deck, personalized coaching by Chakri & Jani, and luxury sauna in Lakshmipuram, Guntur.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
