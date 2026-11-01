@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, ArrowRight, ShieldCheck, Flame, Trophy, Users } from 'lucide-react';
 import { GYM_INFO } from '../data/gymData';
+import heroAthleteImg from '../assets/images/hero_athlete_1793536416395.jpg';
 
 interface HeroProps {
   onOpenJoinModal: (plan?: string) => void;
@@ -51,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJoinModal }) => {
             {/* Athlete Hero Image Container */}
             <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-900">
               <img
-                src="/src/assets/images/hero_athlete_1793536416395.jpg"
+                src={heroAthleteImg}
                 alt="Fitlife Gym Guntur Olympic Strength Training"
                 className="w-full h-64 sm:h-80 md:h-96 object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

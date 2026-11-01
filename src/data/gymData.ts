@@ -1,3 +1,6 @@
+import coachChakriImg from '../assets/images/coach_chakri_1793536277690.jpg';
+import coachJaniImg from '../assets/images/coach_jani_1793536277908.jpg';
+
 export interface MembershipPlan {
   id: string;
   name: string;
@@ -123,7 +126,7 @@ export const TRAINERS: Trainer[] = [
     name: "Coach Chakri",
     role: "Head Strength & Body Transformation Coach",
     quote: "Transformation is never about starving yourself; it is about respecting your metabolism, lifting with progressive intent, and maintaining patience. Consistency will build what intensity alone cannot.",
-    image: "/src/assets/images/coach_chakri_1793536277690.jpg",
+    image: coachChakriImg,
     experience: "8+ Years Experience",
     specialties: [
       "Progressive Overload",
@@ -136,7 +139,7 @@ export const TRAINERS: Trainer[] = [
     name: "Coach Jani",
     role: "Senior Personal & Functional Fitness Coach",
     quote: "Every human body has the capability to be strong, lean, and resilient. My role is to eliminate self-doubt, dial in your mechanical execution, and make sure every workout moves you closer to your goal.",
-    image: "/src/assets/images/coach_jani_1793536277908.jpg",
+    image: coachJaniImg,
     experience: "6+ Years Experience",
     specialties: [
       "Hypertrophy Mechanics",
