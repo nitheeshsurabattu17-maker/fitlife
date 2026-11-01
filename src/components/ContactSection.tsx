@@ -306,7 +306,7 @@ export const ContactSection: React.FC = () => {
                 <iframe
                   title="Fitlife Gym Guntur Location Map"
                   src="https://maps.google.com/maps?q=Fitlife+Gym+Guntur&ll=16.3089369,80.4349226&z=17&output=embed"
-                  className="w-full h-full border-0 grayscale invert opacity-80 hover:opacity-100 transition-opacity"
+                  className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
