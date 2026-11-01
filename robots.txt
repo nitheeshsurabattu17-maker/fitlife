@@ -1,0 +1,5 @@
+# Fitlife Gym Guntur - Robots Directives
+User-agent: *
+Allow: /
+
+Sitemap: https://fitlifegymguntur.com/sitemap.xml
