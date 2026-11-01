@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { FeaturesSection } from './components/FeaturesSection';
 import { AboutSection } from './components/AboutSection';
 import { FacilitiesSection } from './components/FacilitiesSection';
+import { TrainersSection } from './components/TrainersSection';
 import { MembershipSection } from './components/MembershipSection';
 import { GallerySection } from './components/GallerySection';
 import { WhyUsSection } from './components/WhyUsSection';
@@ -32,21 +33,19 @@ export const App: React.FC = () => {
     const sectionIds = ['home', 'features', 'about', 'facilities', 'trainers', 'membership', 'gallery', 'why-us', 'contact'];
     
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200;
-      for (const id of sectionIds) {
+      const scrollPosition = window.scrollY + 250;
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const id = sectionIds[i];
         const el = document.getElementById(id);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(id);
-            break;
-          }
+        if (el && scrollPosition >= el.offsetTop) {
+          setActiveSection(id);
+          break;
         }
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -64,6 +63,7 @@ export const App: React.FC = () => {
         <FeaturesSection onOpenJoinModal={handleOpenJoinModal} />
         <AboutSection onOpenJoinModal={handleOpenJoinModal} />
         <FacilitiesSection onOpenJoinModal={handleOpenJoinModal} />
+        <TrainersSection onOpenJoinModal={handleOpenJoinModal} />
         <MembershipSection onOpenJoinModal={handleOpenJoinModal} />
         <GallerySection />
         <WhyUsSection />

@@ -14,7 +14,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenJoinModal, activeSection }
     { label: 'Features', href: '#features' },
     { label: 'About', href: '#about' },
     { label: 'Facilities', href: '#facilities' },
-    { label: 'Programs', href: '#programs' },
     { label: 'Trainers', href: '#trainers' },
     { label: 'Pricing', href: '#membership' },
     { label: 'Gallery', href: '#gallery' },

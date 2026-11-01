@@ -302,14 +302,23 @@ export const ContactSection: React.FC = () => {
               </p>
 
               {/* Map embed / Interactive Visual */}
-              <div className="relative rounded-2xl overflow-hidden border border-slate-800 h-64 bg-slate-950">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-800 h-64 bg-slate-950 group">
                 <iframe
                   title="Fitlife Gym Guntur Location Map"
-                  src="https://maps.google.com/maps?q=16.3114,80.4365&hl=en&z=16&output=embed"
+                  src="https://maps.google.com/maps?q=Fitlife+Gym+Guntur&ll=16.3089369,80.4349226&z=17&output=embed"
                   className="w-full h-full border-0 grayscale invert opacity-80 hover:opacity-100 transition-opacity"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
+                <a
+                  href={GYM_INFO.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-3 left-3 bg-slate-900/90 hover:bg-slate-900 text-white hover:text-lime-400 border border-slate-700 rounded-lg px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg transition-colors"
+                >
+                  <span>Open in Maps</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Landmarks */}

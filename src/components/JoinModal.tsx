@@ -156,7 +156,7 @@ export const JoinModal: React.FC<JoinModalProps> = ({ isOpen, onClose, defaultPl
                   <input
                     type="tel"
                     required
-                    placeholder="+91 85200 32793"
+                    placeholder="+91 94913 83444"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-xs placeholder:text-slate-600 focus:outline-none focus:border-lime-400 transition-colors"
